@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      #color{
+        background-color: black;
+      }
+        #an {
+          width : 300px;
+          height : 300px;
+          left : 0;
+          top:100px;
+        }
+        .background1 {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url('getter.png');
+        width: 1300px;
+        height: 1300px;
+         }
+         .background8 {
+         position: fixed;
+         left: 0;
+         z-index: 5;
+         display: block;
+         background-image: url('lovelies.jpg');
+         width: 300px;
+         height: 200px;
+          }
+          .background111 {
+          position: fixed;
+          left: 0;
+          z-index: 1;
+          display: block;
+          background-image: url('hog3.png');
+          width: 800px;
+          height:705px;
+           }
+           .backgroundblack {
+           position: fixed;
+           left: 0;
+           z-index: 2;
+           display: block;
+           background-image: url('hiya.png');
+           width: 59px;
+           height:600px;
+            }
+            .backgroundblack2 {
+            position: fixed;
+            left: 0;
+            z-index: 2;
+            display: block;
+            background-image: url('hiya.png');
+            width: 900px;
+            height:45px;
+             }
+          .background9 {
+          position: fixed;
+          left: 0;
+          z-index: 3;
+          display: block;
+          background-image: url('ellipese2.png');
+          width: 700px;
+          height: 525px;
+           }
+        .background-imag {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url('game3.png');
+        width: 1300px;
+        height: 420px;
+         }
+        .background-image {
+  			position: fixed;
+  			left: 0;
+  			right: 0;
+  			z-index: 4;
+  			display: block;
+  			background-image: url('logo copy.png');
+  			width: 257px;
+  			height: 300px;
+	       }
+         .background-image2 {
+   			position: fixed;
+   			left: 0;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('Shadow-PNG-Clipart2.png');
+   			width: 1300px;
+   			height: 300px;
+ 	       }
+         .background-image3 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('kl.png');
+   			width: 690px;
+   			height: 100px;
+ 	       }
+         .background-image4 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('fff.png');
+   			width: 1300px;
+   			height: 50px;
+ 	       }
+         .background-image5 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 1;
+   			display: block;
+   			background-image: url('source 2.gif');
+   			width: 1300px;
+   			height: 420px;
+ 	       }
+		    .content {
+  			position: absolute;
+  			left: 0;
+  			right: 0;
+  			z-index: 9999;
+  			margin-left: 20px;
+  			margin-right: 20px;
+			}
+    </style>
+    <script>
+      var glo = "#CB4335";
+
+      function changecolor() {
+         var listofColors = ["#CB4335","#884EA0","#5499C7","#5DADE2","#1ABC9C","#2ECC71","#F4D03F", "#F39C12","#D35400"];
+         var x = Math.floor((Math.random() * (listofColors.length-1)));
+         glo = listofColors[x];
+         document.getElementById('colors').style.color = glo;
+
+       }
+       function changecolor1() {
+            var i = 0;
+            var listofColors = [];
+            var glo = "";
+            var i=0;
+            while (i<1000){
+
+              setInterval(function(){
+              listofColors = ["#CB4335","#884EA0","#5499C7","#5DADE2","#1ABC9C","#2ECC71","#F4D03F", "#F39C12","#D35400"];
+              x=Math.floor((Math.random() * (listofColors.length-1)));
+              glo = listofColors[x];
+              document.getElementById('love').style.color = glo;
+
+            }, 2000);
+              i+=1;
+            }
+}
+
+                // var start = new Date().getTime();
+                // var end = start;
+                // while(end < start + 200) {
+                //   end = new Date().getTime();
+                // }
+
+
+
+
+
+
+
+    </script>
+
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=outline">
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=3d">
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Aclonica">
+
+            <title>HS HERO</title>
+  </head>
+  <body id = "color" onload="changecolor1()">
+    <div STYLE="position:absolute; TOP:0px; LEFT:0;"></div>
+
+    <div class="background-image" STYLE="position:absolute; TOP:0px; LEFT:1000px;"></div>
+    <div class="background-imag" STYLE="position:absolute;"></div>
+    <div class="background-image2" STYLE="position:absolute; TOP:0px; LEFT:0px;"></div>
+    <div class="background-image3" STYLE="position:absolute;LEFT:300px;TOP:120px;"></div>
+    <div class="background-image4" STYLE="position:absolute;LEFT:0px;TOP:400px;"></div>
+    <div class="background-image5" STYLE="position:absolute; TOP:0px; LEFT:0px;"></div>
+
+    <div class="content">
+    <link rel = "stylesheet" href="css.css">
+    <div STYLE = "color:white;font-size:20px;">HighSchoolHero</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href= cuteclothes.html> <img id = "rox" STYLE="position:absolute; TOP:440px; LEFT:10px; WIDTH:300px; HEIGHT:170px" SRC="hopen.png"></a>
+    <a href= h.html> <img id = "rox" STYLE="position:absolute; TOP:440px; LEFT:330px; WIDTH:300px; HEIGHT:170px" SRC="dopen.png"></a>
+    <a href= game.html> <img id = "rox" STYLE="position:absolute; TOP:462px; LEFT:650px; WIDTH:300px; HEIGHT:140px" SRC="gclose.png"></a>
+    <a href= satact.html> <img id = "rox" STYLE="position:absolute; TOP:430px; LEFT:960px; WIDTH:300px; HEIGHT:170px" SRC="topen1.png"></a>
+
+    <center><div class="font-effect-3d" STYLE = "position:absolute;color:white;font-size:75px;font-family:'Rubik Mono One';z-index:20;left:420px;top:110px;" id = "ret">Gaming</div>
+    <div id = "love"class="font-effect-3d" style="position:absolute;font-size:175px;font-family:'Rubik Mono One';z-index:20;left:310px;top:200px;">TIME</div></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><div STYLE = "color:white;font-size:20px;">Heyo! Welcome to the gaming section. This part of the website will teach you how to navigate college admissions and teenage life!</div></center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <center><iframe src="https://scratch.mit.edu/projects/324168223/embed" allowtransparency="true" width="955" height="906" frameborder="0" scrolling="no" allowfullscreen></iframe></center>
+
+
+    <audio src="bensound-punky.mp3" autoplay>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+    <b>
+      <center>
+    <p>
+    </p>
+    </center>
+
+    </b>
+  </div>
+
+
+  </body>
+</html>

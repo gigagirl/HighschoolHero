@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HS HERO</title>
+  <script src="satactap.js"></script>
+  <script>
+    function changecolor1() {
+         var i = 0;
+         var listofColors = [];
+         var glo = "";
+         var i=0;
+         while (i<1000){
+
+           setInterval(function(){
+           listofColors = ["#CB4335","#884EA0","#5499C7","#5DADE2","#1ABC9C","#2ECC71","#F4D03F", "#F39C12","#D35400"];
+           x=Math.floor((Math.random() * (listofColors.length-1)));
+           glo = listofColors[x];
+           document.getElementById('love').style.color = glo;
+
+         }, 2000);
+           i+=1;
+         }
+    }
+  </script>
+<style>
+  .background-image3 {
+  position: fixed;
+  top: 300;
+  right: 0;
+  z-index: 3;
+  display: block;
+  background-image: url('kl.png');
+  width: 690px;
+  height: 100px;
+  }
+
+  .background-image5 {
+ position: fixed;
+ top: 300;
+ right: 0;
+ z-index: 1;
+ display: block;
+ background-image: url('source 2.gif');
+ width: 1300px;
+ height: 420px;
+  }
+  .background-image2 {
+ position: fixed;
+ left: 0;
+ right: 0;
+ z-index: 3;
+ display: block;
+ background-image: url('Shadow-PNG-Clipart2.png');
+ width: 1420px;
+ height: 300px;
+  }
+  .background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: block;
+  background-image: url('logo copy.png');
+  width: 257px;
+  height: 300px;
+   }
+</style>
+
+  <link rel="stylesheet" href="satactap.css">
+</head>
+<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=outline">
+<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=3d">
+<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Aclonica">
+
+
+<body onload="changecolor1()">
+  <div STYLE = "position:absolute;color:white;font-size:20px;z-index:100000;">HighSchoolHero</div>
+
+  <div class="background-image" STYLE="position:absolute; TOP:0px; LEFT:1000px;z-index:10000;"></div>
+
+  <center>
+    <div class="background-image2" STYLE="position:absolute; TOP:0px; LEFT:0px;z-index:21;"></div>
+
+    <div class="background-image3" STYLE="position:absolute;LEFT:266px;TOP:100px;z-index:20;"></div>
+    <div class="background-image5" STYLE="position:absolute; TOP:0px; LEFT:0px;z-index:21;"></div>
+    <a href= cuteclothes.html> <img id = "rox" STYLE="position:absolute; TOP:480px; LEFT:10px; WIDTH:300px; HEIGHT:170px" SRC="hopen.png"></a>
+    <a href= h.html> <img id = "rox" STYLE="position:absolute; TOP:480px; LEFT:330px; WIDTH:300px; HEIGHT:170px" SRC="dopen.png"></a>
+    <a href= game.html> <img id = "rox" STYLE="position:absolute; TOP:482px; LEFT:650px; WIDTH:300px; HEIGHT:170px" SRC="gopen.png"></a>
+    <a href= satact.html> <img id = "rox" STYLE="position:absolute; TOP:510px; LEFT:960px; WIDTH:300px; HEIGHT:130px" SRC="tclose.png"></a>
+
+    <div class="font-effect-3d" STYLE = "position:absolute;color:white;font-size:75px;font-family:'Rubik Mono One';z-index:20;left:390px;top:100px;" id = "ret">TESTING</div>
+    <div id = "love"class="font-effect-3d" style="position:absolute;font-size:175px;font-family:'Rubik Mono One';z-index:20;left:320px;top:200px;">TIME</div>
+    <div class="header" >
+</div>
+
+  <div class="topnav">
+  <a href="satact.html">ACT or SAT?</a>
+  <a href="ACTorSAT.html">Which is the right fit?</a>
+  <a href="SATACTm.html">SAT math</a>
+  <a href="SATACTen.html">SAT english</a>
+  <a href="actq.html">ACT math</a>
+  <a href="actqe.html">ACT english</a>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1> ACT or SAT? </h1>
+  <p>
+    We want to help you decide which test to take. We want you to get the score you want.
+  </p>
+  <p>
+    It's important for you to do well on your SAT and/or ACT so that you can get into the colleges that you want.
+    <br>
+    For those of you who don't know which one you would score better in, this website is for you!
+    <br>
+    If you decided which you would like to take and want some practice, see the links below.
+  </p>
+  <br>
+  <h2><a href = "ACTorSAT.html">To determine which test you should take click here!</a></h2>
+  <br>
+  <br>
+  <h2>SAT PRACTICE</h2>
+  <p><a href = "SATACTm.html"><h3>
+    Click here to test your math skills for the SAT.
+  </h3></a></p>
+  <p><a href = "SATACTen.html"><h3>
+    Click here to test your english skills for the SAT.
+  </h3></a></p>
+  <h2>ACT PRACTICE</h2>
+  <p><a href = "actq.html"><h3>
+    Click here to test your math skills for the ACT.
+  </h3></a></p>
+  <p><a href = "actqe.html"><h3>
+    Click here to test your english skills for the ACT.
+  </h3></a></p>
+</center></body>
+</html>

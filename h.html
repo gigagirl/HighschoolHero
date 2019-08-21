@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <meta charset=utf-8 />
+    <script>
+
+    </script>
+    <style>
+      #color{
+        background-color: black;
+      }
+      #blahe{
+        position: absolute;
+        visibility: hidden;
+      }
+      #blah{
+        position: absolute;
+        visibility: hidden;
+      }
+      #blahit{
+        position: absolute;
+        visibility: hidden;
+      }
+      .byebye1{
+        position: absolute;
+        top: 2960px;
+        left:610px;
+      }
+      article, aside, figure, footer, header, hgroup,
+      menu, nav, section { display: block; }
+      li
+      {
+          position:  absolute;
+          z-index:800;
+          left: 0px;
+          top: 2800px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+          width: 200px;
+          background: rgba(255,255,255,0.66);
+      }
+      li2
+      {
+          position:  absolute;
+          left: 0px;
+          top: 2800px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+          width: 200px;
+          background: rgba(255,255,255,0.66);
+      }
+      li3
+      {
+          position:  absolute;
+          left: 400px;
+          top: 2800px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+          width: 200px;
+          background: rgba(255,255,255,0.66);
+      }
+      li4
+      {
+          position:  absolute;
+          left: 600px;
+          top: 2800px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+          width: 200px;
+          background: rgba(255,255,255,0.66);
+      }
+        #an {
+          width : 300px;
+          height : 300px;
+          left : 0;
+          top:100px;
+        }
+        .classy{
+          z-index:-10;
+        }
+        .image-upload>input {
+          display: none;
+        }
+        .image-upload1>input {
+          display: none;
+        }
+        .image-upload2>input {
+          display: none;
+        }
+        .imageyou6>input {
+          display: none;
+        }
+        .tab3 {
+          position:absolute;left:470px;top:2650px;z-index:10;
+        }
+        .tab {
+          position:absolute;left:470px;top:2280px;z-index:200;
+        }
+        .tab2 {
+          position:absolute;left:940px;top:2280px;z-index:1000;
+        }
+
+
+
+        .background1 {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url('getter.png');
+        width: 1300px;
+        height: 1300px;
+         }
+         .background8 {
+         position: fixed;
+         left: 0;
+         z-index: 5;
+         display: block;
+         background-image: url('lovelies.jpg');
+         width: 300px;
+         height: 200px;
+          }
+          .background111 {
+          position: fixed;
+          left: 0;
+          z-index: 1;
+          display: block;
+          background-image: url('hog3.png');
+          width: 800px;
+          height:705px;
+           }
+           .backgroundblack {
+           position: fixed;
+           left: 0;
+           z-index: 2;
+           display: block;
+           background-image: url('hiya.png');
+           width: 59px;
+           height:600px;
+            }
+            .backgroundblack2 {
+            position: fixed;
+            left: 0;
+            z-index: 2;
+            display: block;
+            background-image: url('hiya.png');
+            width: 900px;
+            height:45px;
+             }
+             .backgroundx {
+             position: absolute;
+             left: 0;
+             z-index: 2;
+             display: block;
+             background-image: url('hiya.png');
+             width: 1200px;
+             height:600px;
+              }
+              .backgroundx1 {
+              position: absolute;
+              left: 0;
+              z-index: 90;
+              display: block;
+              background-image: url('chick.png');
+              width: 100px;
+              height:1600px;
+               }
+               .backgroundx12 {
+               position: absolute;
+               left: 0;
+               z-index: 90;
+               display: block;
+               background-image: url('kkh23.png');
+               width: 830px;
+               height:50px;
+                }
+                .backgroundx12 {
+                position: absolute;
+                left: 0;
+                z-index: 90;
+                display: block;
+                background-image: url('kkh23.png');
+                width: 830px;
+                height:60px;
+                 }
+                 .backgroundx123 {
+                 position: absolute;
+                 left: 0;
+                 z-index: 90;
+                 display: block;
+                 background-image: url('kkm.png');
+                 width: 60px;
+                 height:430px;
+                  }
+                  .backgroundx1234 {
+                  position: absolute;
+                  left: 0;
+                  z-index: 90;
+                  display: block;
+                  background-image: url('chick.png');
+                  width: 120px;
+                  height:440px;
+                   }
+                   .backgroundx12345 {
+                   position: absolute;
+                   left: 0;
+                   z-index: 90;
+                   display: block;
+                   background-image: url('gg2.png');
+                   width: 100px;
+                   height:405px;
+                    }
+                    .backgroundx123456 {
+                    position: absolute;
+                    left: 0;
+                    z-index: 90;
+                    display: block;
+                    background-image: url('gg4.png');
+                    width: 100px;
+                    height:405px;
+                     }
+                     .backgroundx1234567 {
+                     position: absolute;
+                     left: 0;
+                     z-index: 90;
+                     display: block;
+                     background-image: url('squid1.png');
+                     width: 703px;
+                     height:540px;
+                      }
+                      .backgroundx12345678 {
+                      position: absolute;
+                      left: 0;
+                      z-index: 90;
+                      display: block;
+                      background-image: url('squid4.png');
+                      width: 300px;
+                      height:540px;
+                       }
+                       .great {
+                       position: absolute;
+                       left: 0;
+                       z-index: 90;
+                       display: block;
+                       background-image: url('great.png');
+                       width: 1330px;
+                       height: 70px;
+                        }
+                        .great12 {
+                        position: absolute;
+                        left: 0;
+                        z-index: 90;
+                        display: block;
+                        background-image: url('great.png');
+                        width: 70px;
+                        height: 70px;
+                         }
+                        .good {
+                        position: absolute;
+                        left: 0;
+                        z-index: 90;
+                        display: block;
+                        background-image: url('gege.png');
+                        width: 800px;
+                        height: 402px;
+                         }
+                         .good1 {
+                         position: absolute;
+                         left: 0;
+                         z-index: 90;
+                         display: block;
+                         background-image: url('shirtsss.png');
+                         width: 320px;
+                         height: 222px;
+                          }
+                          .good2 {
+                          position: absolute;
+                          left: 0;
+                          z-index: 90;
+                          display: block;
+                          background-image: url('pantss.png');
+                          width: 320px;
+                          height: 222px;
+                           }
+                           .good3 {
+                           position: absolute;
+                           left: 0;
+                           z-index: 90;
+                           display: block;
+                           background-image: url('dressess.png');
+                           width: 320px;
+                           height: 222px;
+                            }
+
+               .bb {
+               position: absolute;
+               left: 0;
+               z-index: 110;
+               display: block;
+               background-image: url('bub1x.png');
+               width: 300px;
+               height:300px;
+                }
+
+          .background9 {
+          position: fixed;
+          left: 0;
+          z-index: 3;
+          display: block;
+          background-image: url('ellipese2.png');
+          width: 700px;
+          height: 525px;
+           }
+        .background-imag {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url('ezgif.com-gif-maker.gif');
+        width: 1300px;
+        height: 420px;
+         }
+         .calidress {
+         position: absolute;
+         left: 70px;
+         top: 2605px;
+         z-index: 1000;
+         background-image: url('cdress1.png');
+         width: 200px;
+         height: 108px;
+          }
+          .calipants {
+          position: absolute;
+          left: 1020px;
+          top: 2605px;
+          z-index: 1000;
+          background-image: url('cpants1.png');
+          width: 200px;
+          height: 108px;
+           }
+           .cali {
+           position: absolute;
+           left: 405px;
+           top: 2455px;
+           z-index: -3;
+           background-image: url('emptybabe2.png');
+           width: 500px;
+           height: 459px;
+            }
+         .gifme {
+         position: fixed;
+         left: 0;
+         right: 0;
+         z-index: -1;
+         display: block;
+         background-image: url('IndelibleDigitalFly-small.gif');
+         width: 1300px;
+         height: 420px;
+          }
+        .background-image {
+  			position: fixed;
+  			left: 0;
+  			right: 0;
+  			z-index: 4;
+  			display: block;
+  			background-image: url('logo copy.png');
+  			width: 257px;
+  			height: 300px;
+	       }
+         .background-image2 {
+   			position: fixed;
+   			left: 0;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('Shadow-PNG-Clipart2.png');
+   			width: 1300px;
+   			height: 300px;
+ 	       }
+         .background-image3 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('kl.png');
+   			width: 690px;
+   			height: 100px;
+ 	       }
+         .background-image4 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 3;
+   			display: block;
+   			background-image: url('fff.png');
+   			width: 1300px;
+   			height: 50px;
+ 	       }
+         .background-image120 {
+   			position: absolute;
+   			top: 300;
+   			right: 0;
+   			z-index: 6;
+   			display: block;
+   			background-image: url('pinkle.png');
+   			width: 1030px;
+   			height: 150px;
+ 	       }
+         .background-image121 {
+   			position: absolute;
+   			top: 300;
+   			right: 0;
+   			z-index: 5;
+   			display: block;
+   			background-image: url('hjhjh.png');
+   			width: 1060px;
+   			height: 178px;
+ 	       }
+         .background-image1211 {
+   			position: absolute;
+   			top: 300;
+   			right: 0;
+   			z-index: 5;
+   			display: block;
+   			background-image: url('gdf.png');
+   			width: 770px;
+   			height: 295px;
+ 	       }
+         .bar {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 90;
+   			display: block;
+   			background-image: url('pinkle.png');
+   			width: 550px;
+   			height: 100px;
+ 	       }
+         .backbar {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 90;
+   			display: block;
+   			background-image: url('fff.png');
+   			width: 580px;
+   			height: 148px;
+ 	       }
+         .background-image5 {
+   			position: fixed;
+   			top: 300;
+   			right: 0;
+   			z-index: 1;
+   			display: block;
+   			width: 1300px;
+   			height: 420px;
+ 	       }
+		    .content {
+  			position: absolute;
+  			left: 0;
+  			right: 0;
+  			z-index: 9999;
+  			margin-left: 20px;
+  			margin-right: 20px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+      .container {
+      background-color: white;
+
+    }
+    .next {
+      position:absolute;
+      z-index:11;
+    }
+    .holder{
+      position:absolute;
+        width: 400px;
+        height:300px;
+        TOP:300;
+        z-index:-1;
+    }
+    .frame{
+        width: 100%;
+        height:100%;
+        background-color: black;
+        z-index:4;
+    }
+    .bar1{
+        position:absolute;
+        top:500;
+        left:0;
+        width:300%;
+        height:400px;
+        background-color: red;
+        z-index:0;
+    }
+
+      #blahe{
+        z-index:1000;
+      }
+    </style>
+    <script>
+      var z=0;
+      var a = 0;
+      var zpants=0;
+      var apants = 0;
+      var leftvalp = 0;
+      var topvalp = 0;
+      var leftval = 0;
+      var topval = 0;
+
+      function readURL(input) {
+              if (input.files && input.files[0]) {
+                document.getElementById("blah").style.visibility = "visible";
+                getxLoc();
+                getyLoc();
+                var lefty = leftval-956;
+                var toppy = topval-2278;
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                      $('#blah')
+                          .attr('src', e.target.result)
+                          .width(z)
+                          .height(a);
+                          $('#blah').css({top: toppy, left: lefty, position:'absolute'});
+
+
+                  };
+
+                  reader.readAsDataURL(input.files[0]);
+
+              }
+          }
+
+          function readURL1(input) {
+            document.getElementById("blahe").style.visibility = "visible";
+            getxLocpants();
+            getyLocpants();
+                  if (input.files && input.files[0]) {
+                    var lefty = leftvalp-18;
+                    var toppy = topvalp-2280;
+                      var reader = new FileReader();
+
+                      reader.onload = function (e) {
+                          $('#blahe')
+                              .attr('src', e.target.result)
+                              .width(zpants+10)
+                              .height(apants);
+                              $('#blahe').css({top: toppy, left: lefty, position:'absolute'});
+
+                      };
+
+                      reader.readAsDataURL(input.files[0]);
+                  }
+              }
+              function readURL2(input) {
+                      if (input.files && input.files[0]) {
+                          var reader = new FileReader();
+
+                          reader.onload = function (e) {
+                              $('#blahi')
+                                  .attr('src', e.target.result)
+                                  .width(500)
+                                  .height(200);
+                          };
+
+                          reader.readAsDataURL(input.files[0]);
+                      }
+                  }
+
+                  function readURL3(input) {
+                          document.getElementById("blahit").style.visibility = "visible";
+                          if (input.files && input.files[0]) {
+
+                              var reader = new FileReader();
+
+                              reader.onload = function (e) {
+                                  $('#blahit')
+                                      .attr('src', e.target.result)
+                                      .width(500)
+                                      .height(500);
+                                      $('#blahit').css({top: -210, left: -85, position:'absolute'});
+
+                              };
+
+                              reader.readAsDataURL(input.files[0]);
+                          }
+                      }
+
+          function byebye(){
+            document.getElementById("txt1").style.display = "none";
+            document.getElementById("txt2").style.display = "none";
+            document.getElementById("txt3").style.display = "none";
+            document.getElementById("txt4").style.display = "none";
+            document.getElementById("pants1").style.display = "none";
+            document.getElementById("pants2").style.display = "none";
+            document.getElementById("pants3").style.display = "none";
+            document.getElementById("pants4").style.display = "none";
+          }
+
+
+
+      function calcDimensions(){
+        getxLoc();
+        getyLoc();
+        alert(leftval);
+        alert(topval);
+        alert(z);
+        alert(a);
+        document.getElementById("display-image").left = a.toString()+"px";
+        alert(document.getElementById("display-image").left);
+      }
+      function getxLoc(){
+
+        var x = document.getElementById("txt1").style.left;
+        var x2 = document.getElementById("txt2").style.left;
+        leftval = parseInt(x2.substring(0,3));
+        var intx= parseInt(x.substring(0,3));
+        var intx2= parseInt(x2.substring(0,3));
+        z = intx-intx2;
+
+      }
+      function getxLocpants(){
+        var x = document.getElementById("pants1").style.left;
+        var x2 = document.getElementById("pants2").style.left;
+        leftvalp = parseInt(x2.substring(0,3));
+        var intx= parseInt(x.substring(0,3));
+        var intx2= parseInt(x2.substring(0,3));
+        zpants = intx-intx2;
+      }
+
+      function drag_start(event) {
+          var style = window.getComputedStyle(event.target, null);
+          var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top")) - event.clientY) + ',' + event.target.id;
+          event.dataTransfer.setData("Text", str);
+      }
+
+      function drop(event) {
+          var offset = event.dataTransfer.getData("Text").split(',');
+          var dm = document.getElementById(offset[2]);
+          dm.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
+          dm.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
+          event.preventDefault();
+          return false;
+      }
+
+      function drag_over(event) {
+          event.preventDefault();
+          return false;
+      }
+
+
+
+
+
+
+
+
+
+      function getyLoc() {
+        var y = document.getElementById("txt3").style.top;
+        var y2=document.getElementById("txt4").style.top;
+
+        topval = parseInt(y2.substring(0,5));
+        var inty = parseInt(y.substring(0,5));
+        var inty2 = parseInt(y2.substring(0,5));
+        a = inty-inty2;
+
+      }
+      function getyLocpants() {
+        var y = document.getElementById("pants3").style.top;
+        var y2=document.getElementById("pants4").style.top;
+        topvalp=parseInt(y2.substring(0,5));
+        var inty = parseInt(y.substring(0,5));
+        var inty2 = parseInt(y2.substring(0,5));
+        apants = inty-inty2;
+      }
+
+        function drag_start(event) {
+            var style = window.getComputedStyle(event.target, null);
+            var str = (parseInt(style.getPropertyValue("left")) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top")) - event.clientY) + ',' + event.target.id;
+            event.dataTransfer.setData("Text", str);
+        }
+
+        function drop(event) {
+            var offset = event.dataTransfer.getData("Text").split(',');
+            var dm = document.getElementById(offset[2]);
+            dm.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
+            dm.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
+            event.preventDefault();
+            return false;
+        }
+
+        function drag_over(event) {
+            event.preventDefault();
+            return false;
+        }
+
+
+
+
+
+
+      function handleImageUpload()
+    {
+
+    var image = document.getElementById("upload").files[0];
+
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          document.getElementById("display-image").src = e.target.result;
+        }
+
+        q = reader.readAsDataURL(image);
+
+
+    }
+
+    function handleImageUpload1()
+    {
+
+    var image = document.getElementById("blue").files[0];
+
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        document.getElementById("display-image1").src = e.target.result;
+      }
+
+      reader.readAsDataURL(image);
+
+    }
+
+    function handleImageUpload2()
+  {
+
+  var image = document.getElementById("pink").files[0];
+
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        document.getElementById("display-image2").src = e.target.result;
+      }
+
+      reader.readAsDataURL(image);
+
+  }
+
+  function handleImageUploadyou()
+{
+
+var image = document.getElementById("orange").files[0];
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      document.getElementById("display-image3").src = e.target.result;
+    }
+
+    reader.readAsDataURL(image);
+
+}
+
+      var glo = "#CB4335";
+
+      function changecolor() {
+         var listofColors = ["#CB4335","#884EA0","#5499C7","#5DADE2","#1ABC9C","#2ECC71","#F4D03F", "#F39C12","#D35400"];
+         var x = Math.floor((Math.random() * (listofColors.length-1)));
+         glo = listofColors[x];
+         document.getElementById('colors').style.color = glo;
+
+       }
+       function changecolor1() {
+            var i = 0;
+            var listofColors = [];
+            var glo = "";
+            var i=0;
+            while (i<1000){
+
+              setInterval(function(){
+              listofColors = ["#CB4335","#884EA0","#5499C7","#5DADE2","#1ABC9C","#2ECC71","#F4D03F", "#F39C12","#D35400"];
+              x=Math.floor((Math.random() * (listofColors.length-1)));
+              glo = listofColors[x];
+              document.getElementById('love').style.color = glo;
+
+            }, 2000);
+              i+=1;
+            }
+}
+
+                // var start = new Date().getTime();
+                // var end = start;
+                // while(end < start + 200) {
+                //   end = new Date().getTime();
+                // }
+
+
+
+
+
+
+
+    </script>
+
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=outline">
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Rubik Mono One&effect=3d">
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=DM Serif Text">
+
+            <title>HS HERO</title>
+  </head>
+  <body id = "color" onload="changecolor1()" class ="container"  ondragover="drag_over(event)" ondrop="drop(event)">
+    <div STYLE="position:absolute; TOP:0px; LEFT:0;"></div>
+
+    <div class="background-image" STYLE="position:absolute; TOP:0px; LEFT:1000px;"></div>
+    <div class="background-imag" STYLE="position:absolute;top:0;"></div>
+    <div class="gifme" STYLE="position:absolute;top:0;"></div>
+    <div class="calidress"></div>
+    <div class="calipants"></div>
+    <div class="cali"></div>
+
+
+    <div class="background-image2" STYLE="position:absolute; TOP:0px; LEFT:0px;"></div>
+    <div class="background-image3" STYLE="position:absolute;LEFT:300px;TOP:120px;"></div>
+    <div class="background-image4" STYLE="position:absolute;LEFT:0px;TOP:400px;"></div>
+
+
+    <div class="background-image5" STYLE="position:absolute; TOP:0px; LEFT:0px;"></div>
+
+    <div class="content">
+    <link rel = "stylesheet" href="css.css">
+    <div STYLE = "color:white;font-size:20px;">HighSchoolHero</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href= cuteclothes.html> <img id = "rox" STYLE="position:absolute; TOP:435px; LEFT:10px; WIDTH:300px; HEIGHT:170px" SRC="hopen.png"></a>
+    <a href= h.html> <img id = "rox" STYLE="position:absolute; TOP:430px; LEFT:330px; WIDTH:300px; HEIGHT:210px" SRC="dclose.png"></a>
+    <a href= game.html> <img id = "rox" STYLE="position:absolute; TOP:442px; LEFT:650px; WIDTH:300px; HEIGHT:170px" SRC="gopen.png"></a>
+    <a href= satact.html> <img id = "rox" STYLE="position:absolute; TOP:430px; LEFT:960px; WIDTH:300px; HEIGHT:170px" SRC="topen1.png"></a>
+
+    <center><div class="font-effect-3d" STYLE = "position:absolute;color:white;font-size:75px;font-family:'Rubik Mono One';z-index:20;left:380px;top:110px;" id = "ret">Dressing</div>
+    <div id = "love"class="font-effect-3d" style="position:absolute;font-size:175px;font-family:'Rubik Mono One';z-index:20;left:330px;top:200px;">Time</div></center>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <center><div STYLE = "font-family:'DM Serif Text';color:black;font-size:30px;z-index :110;position: absolute;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Instructions:</div></center>
+    <br>
+    <br>
+    <br>
+
+    <div STYLE = "font-family:'DM Serif Text';color:black;font-size:20px;position: absolute;z-index :110;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp Welcome to Dress, You Hot Mess! This section of MyHighschoolHero lets you test drive new cute outfits and teaches</div>
+    <br>
+
+    <div STYLE = "font-family:'DM Serif Text';color:black;font-size:20px;position: absolute;z-index :110;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp you how to dress in a "corporate" fashion. You will first be asked to upload a png(with a white background) and</div>
+    <br>
+
+    <div STYLE = "font-family:'DM Serif Text';color:black;font-size:20px;position: absolute;z-index :110;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp using a nifty API, we will convert it into a compatible picture format and return it to you. Then, you will upload the</div>
+    <br>
+
+    <div STYLE = "font-family:'DM Serif Text';color:black;font-size:20px;position: absolute;z-index :110;"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   &nbsp  &nbsp new picture and Lastly, send in a photo of yourself! Then, using a top secret algorithm, we will clothe you.</div>
+
+    <br>
+
+
+    <div>
+      <div></div>
+      <center>
+      <div>
+      <iframe src="https://onlinepngtools.com/create-transparent-png?color=white&threshold=12%25&mask=false"style="width: 1000px; height: 890px"></iframe>
+      </iframe></div></center>
+
+    </div>​
+
+    <br>
+
+
+    <br>
+    <br>
+    <div class="background-image120" STYLE="position:absolute;LEFT:130px;TOP:690px;z-index:99;"></div>
+
+    <div class="background-image121" STYLE="position:absolute;LEFT:115px;TOP:675px;z-index:98;"></div>
+
+    <img src = "min.PNG" width= 300px length = 300px STYLE = "position:absolute; TOP: 900px;LEFT:0px;z-index:140;">
+    <img src = "zoe.PNG" width= 300px length = 300px STYLE = "position:absolute; TOP: 870px;LEFT:300px;z-index:140;">
+    <img src = "tierra.PNG" width= 300px length = 300px STYLE = "position:absolute; TOP: 900px;LEFT:600px;z-index:140;">
+    <img src = "shani.PNG" width= 300px length = 300px STYLE = "position:absolute; TOP: 900px;LEFT:900px;z-index:140;">
+
+    <div class="backgroundx12" STYLE="position:absolute;LEFT:233px;TOP:1222px;z-index:130;"></div>
+    <div class="backgroundx12" STYLE="position:absolute;LEFT:233px;TOP:1683px;z-index:130;"></div>
+    <div class="backgroundx123" STYLE="position:absolute;LEFT:238px;TOP:1280px;z-index:110;"></div>
+    <div class="backgroundx123" STYLE="position:absolute;LEFT:995px;TOP:1280px;z-index:110;"></div>
+    <div class="backgroundx1234" STYLE="position:absolute;LEFT:120px;TOP:1270px;z-index:101;"></div>
+    <div class="backgroundx1234" STYLE="position:absolute;LEFT:1058px;TOP:1280px;z-index:101;"></div>
+    <div class="backgroundx1234" STYLE="position:absolute;LEFT:1065px;TOP:1260px;z-index:101;"></div>
+    <div class="backgroundx1234567" STYLE="position:absolute;LEFT:-400px;TOP:1200px;z-index:109;"></div>
+    <div class="backgroundx12345678" STYLE="position:absolute;LEFT:990px;TOP:1200px;z-index:109;"></div>
+    <div class="great" STYLE="position:absolute;LEFT:-40px;TOP:1157px;z-index:104;"></div>
+    <div class="great" STYLE="position:absolute;LEFT:-40px;TOP:1743px;z-index:104;"></div>
+    <div class="good" STYLE="position:absolute;LEFT:250px;TOP:1843px;z-index:104;"></div>
+
+
+    <div class="backgroundx" STYLE="position:absolute;LEFT:0px;TOP:675px;z-index:90;"></div>
+
+    <div class="background-image1211" STYLE="position:absolute;LEFT:240px;TOP:1200px;z-index:-10;"></div>
+    <div class="background-image1211" STYLE="position:absolute;LEFT:240px;TOP:1350px;z-index:-10;"></div>
+    <div class="background-image1211" STYLE="position:absolute;LEFT:240px;TOP:1400px;z-index:-10;"></div>
+
+
+
+
+
+
+
+
+<br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br>
+<button class = "byebye1" onclick="byebye()">Done!</button>
+
+
+
+<span class = "tab2">
+
+<div class="image-upload">
+  <label for="rock">
+    <img src="shirtsss.png"/>
+  </label>
+
+  <input id = "rock" type='file' onchange="readURL(this);" />
+    <img  id="blah" src="#" alt="your image" />
+</div>
+</span>
+
+
+<div class="image-upload1" style="position:absolute;left:0;top:600;">
+  <label for="blue">
+    <img src="pantss.png"/>
+  </label>
+
+  <input id = "blue" type='file' onchange="readURL1(this);" />
+    <img id="blahe" src="#" alt="your image" />
+</div>
+
+<!-- <span class = "tab">
+<div class="image-upload2" style="position:absolute;top:1000;">
+  <label for="pink">
+    <img src="dressess.png"/>
+  </label>
+
+  <input id = "pink" type='file' onchange="readURL2(this);" />
+    <img id="blahi" src="#" alt="your image" />
+</div>
+</span> -->
+
+<span class = "tab3">
+
+<div class="imageyou6">
+  <label for="orange">
+    <img src="buttonss.png" style="position:absolute;top:-360px;left:30px;"/>
+  </label>
+
+  <input id= "orange" type = "file" onChange = "readURL3(this)">
+  <img id="blahit" src="#" alt="your image" />
+</div>
+</span>
+
+
+    <!-- <span class="tab"><input id= "upload" type = "file" onChange = "handleImageUpload()"></span> -->
+    <img class = "next" id = "display-image" src =""/>
+    <img class = "next" id = "display-image1" src =""/>
+    <img class = "next" id = "display-image2" src =""/>
+    <center><img  id = "display-image3" style="position:relative;top:600px;" src =""/></center>
+
+
+
+
+    <ul>
+           <li id="txt3" draggable="true" ondragstart="drag_start(event)" style = "left:50px;top:2700px;">drag me(bottom of torso)</li>
+           <li id="txt4" draggable="true" ondragstart="drag_start(event)" style = "left:50px;top:2720px;">drag me(top of torso)</li>
+    </ul>
+    <ul>
+    <li id = "txt1" draggable="true" ondragstart="drag_start(event)" style = "left:50px;top:2740px;">drag me(right of torso)</li>
+    <li id="txt2" draggable="true" ondragstart="drag_start(event)" style = "left:50px;top:2760px;">drag me(left of torso)</li>
+    </ul>
+
+    <ul>
+           <li id="pants3" draggable="true" ondragstart="drag_start(event)" style = "left:1000px;top:2720px;">drag me(bottom)</li>
+           <li id="pants4" draggable="true" ondragstart="drag_start(event)" style = "left:1000px;top:2740px;">drag me(top)</li>
+   </ul>
+     <ul>
+     <li id = "pants1" draggable="true" ondragstart="drag_start(event)"style = "left:1000px;top:2700px;">drag me(right of thighs)</li>
+     <li id="pants2" draggable="true" ondragstart="drag_start(event)"style = "left:1000px;top:2760px;">drag me(left of thighs)</li>
+     </ul>
+
+
+    </div>
+    <audio src="bensound-punky.mp3" autoplay>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+    </audio>
+    <b>
+      <center>
+    <p>
+    </p>
+    </center>
+
+    </b>
+  </div>
+  </div>
+  </div>
+  </div>
+  </body>
+  <meta charset="utf-8">
+  <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+  <meta name="dcterms.created" content="Fri, 27 Jun 2014 21:02:23 GMT">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+</html>
