@@ -1138,11 +1138,17 @@ function changeimage1() {
   alert(link);
   document.getElementById("shirt1").src = link;
   document.getElementById("shirt1").style.visibility = "visible";
-
   getxLoc();
   getyLoc();
   var lefty = leftval-15;
   var toppy = topval+5;
+  document.getElementById("shirt1").style.width = z;
+  document.getElementById("shirt1").style.height = a;
+  document.getElementById("shirt1").style.position = "absolute";
+  document.getElementById("shirt1").style.top = lefty;
+  document.getElementById("shirt1").style.left = toppy;
+  
+  
 
         $('#shirt1')
             .attr('src', link)
