@@ -1061,26 +1061,26 @@ var image = document.getElementById("orange").files[0];
   <br>
   <input style="position:absolute;z-index:1000000;top:2560px;left:550px;"type="submit" onclick="changeimage()"></input>
 
- <img style="position:absolute;z-index:100;"src="#" id="hello1">
+ <img style="position:absolute;z-index:1000000;"src="#" id="hello1">
 
 
  <p>Please type the link of the photo of your shirt!</p>
 
-   <textarea style ="position:absolute;z-index:100;top:3000px;left:10px;"id="message1" rows="10" cols="30">(Copy your shirt link here)</textarea>
+   <textarea style ="position:absolute;z-index:10000000;top:3000px;left:10px;"id="message1" rows="10" cols="30">(Copy your shirt link here)</textarea>
    <br>
-   <input style="position:absolute;z-index:100;top:3100px;left:10px;"type="submit" onclick="changeimage1()"></input>
+   <input style="position:absolute;z-index:10000000;top:3100px;left:10px;"type="submit" onclick="changeimage1()"></input>
 
-  <img style="position:absolute;z-index:100;"src="#" id="shirt1">
+  <img style="position:absolute;z-index:10000000;"src="#" id="shirt1">
 
 
 
   <p>Please type the link of the photo of your pants!</p>
 
-    <textarea style ="position:absolute;z-index:100;top:3000px;left:1080px;"id="message2" rows="10" cols="30">(Copy your pants link here)</textarea>
+    <textarea style ="position:absolute;z-index:100000000;top:3000px;left:1080px;"id="message2" rows="10" cols="30">(Copy your pants link here)</textarea>
     <br>
-    <input style="position:absolute;z-index:100;top:3100px;left:1080px;"type="submit" onclick="changeimage2()"></input>
+    <input style="position:absolute;z-index:100000000;top:3100px;left:1080px;"type="submit" onclick="changeimage2()"></input>
 
-   <img style="position:absolute;z-index:100;"src="#" id="pantss1">
+   <img style="position:absolute;z-index:100000000;"src="#" id="pantss1">
 
 
 </body>
@@ -1117,7 +1117,7 @@ var image = document.getElementById("orange").files[0];
 
 
 function changeimage() {
-	var link = document.getElementById("message").value;
+  var link = document.getElementById("message").value;
   alert(link);
   document.getElementById("hello1").src = link;
   document.getElementById("hello1").style.visibility = "visible";
