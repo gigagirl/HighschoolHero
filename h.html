@@ -1166,6 +1166,13 @@ function changeimage2() {
   getyLocpants();
           var lefty = leftvalp;
           var toppy = topvalp;
+	  var za = zpants+20;
+	  var aaa= apants;
+  document.getElementById("pantss1").style.width = za.toString() + "px";
+  document.getElementById("pantss1").style.height = aaa.toString() + "px";
+  document.getElementById("pantss1").style.position = "absolute";
+  document.getElementById("pantss1").style.top = toppy.toString() + "px";
+  document.getElementById("pantss1").style.left = lefty.toString() + "px";
 
                 $('#pantss1')
                     .attr('src', link)
