@@ -1061,7 +1061,7 @@ var image = document.getElementById("orange").files[0];
   <br>
   <input style="position:absolute;z-index:1000000;top:2560px;left:550px;"type="submit" onclick="changeimage()"></input>
 
- <img style="position:absolute;z-index:1000000;width:500px;height:500px;"src="#" id="hello1">
+ <img style="position:absolute;z-index:1000000;"src="#" id="hello1">
 
 
  <p>Please type the link of the photo of your shirt!</p>
@@ -1121,6 +1121,10 @@ function changeimage() {
   alert(link);
   document.getElementById("hello1").src = link;
   document.getElementById("hello1").style.visibility = "visible";
+  document.getElementById("hello1").style.width = 500px;
+  document.getElementById("hello1").style.height = 500px;
+
+
         $('#hello1')
               .attr('src', link)
               .width('500px')
